@@ -60,7 +60,7 @@ function Game() {
             Juntos exploraron los bosques cercanos, se perdieron en conversaciones interminables y se inspiraron mutuamente en sus respectivas artes.
             Su amor floreció como un jardín en primavera, lleno de colores vibrantes y fragancias dulces.
           </p>
-          <button style={{ marginTop: '20px', padding: '10px', fontSize: '1em' }} onClick={handleConfirm}>
+          <button onClick={handleConfirm}>
             Confirmar
           </button>
         </div>

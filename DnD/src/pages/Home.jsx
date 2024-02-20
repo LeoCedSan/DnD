@@ -70,11 +70,12 @@ export default function Home() {
               {droppedItems.l3 !== null ? <span style={{ fontWeight: 'bold' }}>{droppedItems.l3}</span> : '___'}
             </DropTarget> en una pequeña tienda. La conexión fue instantánea, como si el destino hubiera conspirado para unirlos.
           </p>
+          <button onClick={handleConfirm}>
+            Confirmar</button>
         </div>
       </div>
     </DndProvider>
 
-      <button onClick={handleConfirm}>submi</button>
     </main>
   )
 }
