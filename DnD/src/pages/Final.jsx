@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 function Final() {
   // const item5 = sessionStorage.getItem('item5');
-  const [finalImage, setFinalImage] = useState('')
+  const navigate = useNavigate()
 
   let fin;
 
@@ -20,12 +21,22 @@ function Final() {
   } else if (sessionStorage.getItem('item5') === "Drogas") {
     fin = '/img/bodaB2.jpg'
   }
-
+  const handleConfirm = () => {
+    navigate('/home');
+  
+  };
 
   return (
     <div>
+      <div className="Story">
       {fin && <img src={fin} alt="final" />}
+      </div>
+      <button onClick={handleConfirm}>
+    Home
+  </button>
     </div>
+    
+    
   )
 }
 
