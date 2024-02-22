@@ -1,19 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 
 function Final() {
-  // const item5 = sessionStorage.getItem('item5');
   const navigate = useNavigate()
-
   let fin;
-
-  //   if (sessionStorage.getItem('item5') === "Amor") {
-  //     setFinalImage('/images/bodaB3.jpg')
-  //   }else if (sessionStorage.getItem('item5') === "Hijos") {
-  //     setFinalImage('/images/bodaB1.jpg')
-  //   }else if (sessionStorage.getItem('item5') === "Drogas") {
-  //     setFinalImage('/images/bodaB2.jpg')
-  //   }
-
   if (sessionStorage.getItem('item5') === "Amor") {
     fin = '/img/bodaB3.jpg'
   }else if (sessionStorage.getItem('item5') === "Hijos") {
