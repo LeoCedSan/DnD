@@ -3,9 +3,11 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import DraggableItem from '../components/DraggableItem';
 import DropTarget from '../components/DropTarget';
+import { useNavigate } from 'react-router-dom'
 
 
 function Game() {
+  const navigate = useNavigate()
   const item1 = sessionStorage.getItem('item1');
   const item2 = sessionStorage.getItem('item2');
   const item3 = sessionStorage.getItem('item3');
@@ -27,6 +29,17 @@ function Game() {
   };
 
   const handleConfirm = () => {
+    
+    if (droppedItems.l1 && droppedItems.l2 && droppedItems.l3) {
+      navigate('/game2');
+      sessionStorage.setItem('item4', droppedItems.l1);
+      sessionStorage.setItem('item5', droppedItems.l2);
+      sessionStorage.setItem('item6', droppedItems.l3);
+
+      
+    } else {
+      alert('Por favor, selecciona una opción para cada palabra antes de confirmar.');
+    }
   };
   return (
     <DndProvider backend={HTML5Backend}>
@@ -59,7 +72,7 @@ function Game() {
           <p>
             Con el tiempo, <label id="item1">{item1} </label> y <label id="item1">{item2} </label>
             comenzaron a pasar más tiempo juntos.
-            Descubrieron que compartían una pasión por <label id="item1">{item3}</label>.
+            Descubrieron que compartían una pasión por las <label id="item1">{item3}</label>.
             Juntos exploraron los bosques cercanos, se perdieron en conversaciones interminables y se inspiraron mutuamente en sus respectivas artes.
             Su amor floreció como un jardín en primavera, lleno de colores vibrantes y fragancias dulces.
            </p>
