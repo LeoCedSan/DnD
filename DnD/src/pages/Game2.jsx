@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import DraggableItem from '../components/DraggableItem';
-import DropTarget from '../components/DropTarget';
+import { useNavigate } from 'react-router-dom'
 
 
 function Game2() {
+  const navigate = useNavigate()
   const item1 = sessionStorage.getItem('item1');
   const item2 = sessionStorage.getItem('item2');
   const item3 = sessionStorage.getItem('item3');
@@ -23,6 +23,7 @@ function Game2() {
   };
 
   const handleConfirm = () => {
+    navigate('/final');
   
   };
   return (
