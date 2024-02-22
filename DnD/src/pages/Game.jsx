@@ -10,6 +10,7 @@ function Game() {
   const item2 = sessionStorage.getItem('item2');
   const item3 = sessionStorage.getItem('item3');
 
+
   const [list1, setList1] = useState(['Tormenta', 'Ex', 'Cita']);
   const [list2, setList2] = useState(['Hijos', 'Amor', 'Drogas']);
   const [list3, setList3] = useState(['Aventuras', 'Prostitución', 'Mujeres']);
@@ -56,9 +57,9 @@ function Game() {
         <div className="Story">
           <h2>Historia Inventada</h2>
           <p>
-            Con el tiempo, {item1} y {item2 + ' '}
+            Con el tiempo, <label id="item1">{item1} </label> y <label id="item1">{item2} </label>
             comenzaron a pasar más tiempo juntos.
-            Descubrieron que compartían una pasión por {item3}.
+            Descubrieron que compartían una pasión por <label id="item1">{item3}</label>.
             Juntos exploraron los bosques cercanos, se perdieron en conversaciones interminables y se inspiraron mutuamente en sus respectivas artes.
             Su amor floreció como un jardín en primavera, lleno de colores vibrantes y fragancias dulces.
            </p>
@@ -70,7 +71,7 @@ function Game() {
              Juntos, enfrentaron las adversidades con valentía, apoyándose mutuamente en cada paso del camino. Descubrieron que, a pesar de los desafíos, su amor solo se fortaleció con cada experiencia compartida.
             </p>
             <p>
-            Y así, {item1} y {item2} continuaron su viaje, construyendo una vida llena de <DropTarget onDrop={handleDrop} listId="l2" allowedListId="l2">
+            Y así, <label id="item1">{item1} </label> y <label id="item1">{item2} </label> continuaron su viaje, construyendo una vida llena de <DropTarget onDrop={handleDrop} listId="l2" allowedListId="l2">
               {droppedItems.l2 !== null ? <span style={{ fontWeight: 'bold' }}>{droppedItems.l2}</span> : '___'}
             </DropTarget>,
             <DropTarget onDrop={handleDrop} listId="l3" allowedListId="l3">

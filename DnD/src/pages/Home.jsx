@@ -22,7 +22,6 @@ export default function Home() {
     
     if (droppedItems.l1 && droppedItems.l2 && droppedItems.l3) {
       navigate('/game');
-      console.log('Palabras seleccionadas:', droppedItems.l1, droppedItems.l2, droppedItems.l3);
       sessionStorage.setItem('item1', droppedItems.l1);
       sessionStorage.setItem('item2', droppedItems.l2);
       sessionStorage.setItem('item3', droppedItems.l3);
