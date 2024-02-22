@@ -42,13 +42,24 @@
   }
   
   .DropTarget {
-    margin: 5px;
-    padding: 10px;
+    display: inline;
+    padding: 5px;
     border: 2px dashed #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%
+
   }
   
   .DropTarget.highlight {
     background-color: #e0f0e0;
+  }
+  
+  p {
+    font-size: 1.5rem;
   }
   
