@@ -8,9 +8,9 @@ import '../styles/home.css';
 
 export default function Home() {
   const navigate = useNavigate()
-  const [list1, setList1] = useState(['Alejandro', 'Raimundo', 'Antouan']);
-  const [list2, setList2] = useState(['Rocio', 'Lucia', 'Zafra']);
-  const [list3, setList3] = useState(['Fotos', 'Pinturas', 'Prendas']);
+  const [list1, setList1] = useState(['Raimundo', 'Arnau', 'Matthew']);
+  const [list2, setList2] = useState(['Rocio', 'Marta', 'Mati']);
+  const [list3, setList3] = useState(['Videos', 'Fotos', 'Prendas']);
   const [droppedItems, setDroppedItems] = useState({ l1: null, l2: null, l3: null });
 
   const handleDrop = (targetListId, item) => {
