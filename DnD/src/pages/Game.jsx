@@ -3,7 +3,8 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import DraggableItem from '../components/DraggableItem';
 import DropTarget from '../components/DropTarget';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import '../styles/home.css';
 
 
 function Game() {
@@ -68,7 +69,7 @@ function Game() {
         </div>
 
         <div className="Story">
-          <h2>Historia Inventada</h2>
+          <h1>Historia Inventada</h1>
           <p>
             Con el tiempo, <label id="item1">{item1} </label> y <label id="item1">{item2} </label>
             comenzaron a pasar más tiempo juntos.

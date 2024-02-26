@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useNavigate } from 'react-router-dom'
+import '../styles/home.css';
 
 
 function Game2() {
@@ -31,7 +32,7 @@ function Game2() {
       <div className="App">
         
         <div className="Story">
-          <h2>Historia Inventada</h2>
+          <h1>Historia Inventada</h1>
         <p>
           Finalmente, <label id="item1">{item1} </label> y <label id="item1">{item2} </label>, tras superar cada desafío,
            decidieron dar un paso más en su relación. Se comprometieron y, con el tiempo,
