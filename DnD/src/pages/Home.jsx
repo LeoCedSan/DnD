@@ -61,7 +61,7 @@ export default function Home() {
 
         <div className="Story">
           {/* Historia */}
-          <h2>Historia Inventada</h2>
+          <h1>Historia Inventada</h1>
           <p>
             Había una vez en un pequeño pueblo rodeado de verdes colinas, un joven llamado
             <DropTarget onDrop={handleDrop} listId="l1" allowedListId="l1">
